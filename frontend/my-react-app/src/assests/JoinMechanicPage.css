@@ -1,0 +1,165 @@
+/* Layout for Join as Mechanic Page */
+.join-mechanic-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 40px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Left: Form Container */
+  .form-container {
+    flex: 1 1 50%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: slideIn 0.8s ease-out;
+  }
+  
+  .form-container h1 {
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-size: 2.5rem;
+  }
+  
+  .join-mechanic-form .form-group {
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .join-mechanic-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .join-mechanic-form input,
+  .join-mechanic-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .join-mechanic-form input:focus,
+  .join-mechanic-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  .submit-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Right: Info Container */
+  .info-container {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .info-container h2 {
+    font-size: 2rem;
+    color: #007BFF;
+  }
+  
+  .info-container p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .info-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Popup Notification */
+  .popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: popUp 0.5s ease-out;
+    z-index: 10000;
+  }
+  
+  .popup.error {
+    background: #dc3545;
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes popUp {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .join-mechanic-page {
+      flex-direction: column;
+    }
+    .form-container,
+    .info-container {
+      flex: 1 1 100%;
+    }
+  }
+  
