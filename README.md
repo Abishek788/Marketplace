@@ -1,6 +1,6 @@
 # CARMART Marketplace 🚗
 
-Welcome to the **CARMART Marketplace** repository! This project is a robust, scalable platform for buying, selling, and servicing vehicles. It combines a modern React frontend with a serverless AWS backend managed via Terraform. We're also actively working on advanced features like an **AI optimized cloud tester recovery platform** and enhancing our deployment strategies with AWS S3 and Route 53.
+Welcome to the **CARMART Marketplace** repository! This project is a robust, scalable platform for buying, selling, and servicing vehicles. It combines a modern React frontend with a serverless AWS backend managed via Terraform. We're also actively working on advanced features like an **AI-optimized cloud disaster recovery platform** and enhancing our deployment strategies with AWS S3 and Route 53.
 
 ---
 
